@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.page-container {
+    display: flex;
+    width: 100%;
+    background: white;
+    /* background-color: #000000; */
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.image-section {
+    flex: .3;
+    background: #fcf7ef;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.image-section h2 {
+    color: #1f2937;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.image-section p {
+    color: #303131;
+    margin-bottom: 1rem;
+}
+
+.auth-container {
+    flex: 1;
+    padding: 2rem;
+    width: 100%;
+    max-width: 450px;
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.auth-header h1 {
+    color: #1f2937;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-toggle {
+    display: flex;
+    margin-bottom: 2rem;
+    background: #f3e6cb;
+    padding: 0.25rem;
+    border-radius: 8px;
+    width: 60vw;
+}
+
+.toggle-btn {
+    flex: 1;
+    padding: 0.75rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #000000;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.toggle-btn.active {
+    background: #ffb648;
+    color: #4d2f02;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #191a1b;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #ffb648;
+}
+
+.error-message {
+    color: #dc2626;
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+    display: none;
+}
+
+.auth-button {
+    width: 100%;
+    padding: 0.75rem;
+    background: #ffb648;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+.auth-button:hover {
+    background: #ff9900;    
+}
+
+.auth-button:active {
+    transform: scale(0.98);
+}
+
+.terms-privacy {
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+.terms-privacy a {
+    color: #b19414;
+    text-decoration: none;
+}
+
+.terms-privacy a:hover {
+    text-decoration: underline;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.forgot-password {
+    color: #ffa600;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.password-requirements {
+    font-size: 0.8rem;
+    color: #6b7280;
+    margin-top: 0.25rem;
+}
+
+.form-section {
+    /* background-color: #000000; */
+    display: none;
+    width: 60vw;
+}
+
+.form-section.active {
+    display: block;
+}
+
+/* Rest of your existing CSS remains the same */
+/* ... (keep all the existing CSS for form elements) ... */
+
+@media (max-width: 768px) {
+    .page-container {
+        flex-direction: column;
+        width: 100%;
+        margin: 1rem;
+    }
+
+    .image-section {
+        padding: 1rem;
+    }
+
+    .auth-container {
+        padding: 1rem;
+    }
+}
